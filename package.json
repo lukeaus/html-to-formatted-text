@@ -1,0 +1,27 @@
+{
+  "name": "html-to-formatted-text",
+  "version": "1.0.0",
+  "description": "Convert hml to formatted text",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukeaus/html-to-formatted-text.git"
+  },
+  "keywords": [
+    "html",
+    "formatted",
+    "text"
+  ],
+  "author": "Luke Scott <luke.m.scott@gmail.com> (http://lukescott.co/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukeaus/html-to-formatted-text/issues"
+  },
+  "homepage": "https://github.com/lukeaus/html-to-formatted-text#readme",
+  "dependencies": {
+    "striptags": "3.1.1"
+  }
+}
