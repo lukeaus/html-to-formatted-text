@@ -66,4 +66,16 @@ describe("lib", () => {
         const result = lib("some&nbsp;&nbsp;text");
         expect(result).to.equal("some  text");
     });
+
+    it("should replace tables with new lines", () => {
+        const result = lib("some<table>text</table>");
+        expect(result).to.equal("some\ntext");
+    });
+
+    it("should replace table cells with new lines", () => {
+        const result = lib(
+            "some<table><tbody><tr><td>text1</td><td>text2</td></tr></tbody></table>"
+        );
+        expect(result).to.equal("some\ntext1\ntext2");
+    });
 });
