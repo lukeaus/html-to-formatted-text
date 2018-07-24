@@ -14,9 +14,7 @@ const TAGS_TO_BREAK_ON = [
     "h6",
     "ol",
     "ul",
-    "li",
-    "table",
-    "td"
+    "li"
 ];
 
 module.exports = (text = "") =>
