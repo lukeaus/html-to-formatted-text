@@ -1,6 +1,6 @@
 {
     "name": "html-to-formatted-text",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Convert HTML to formatted text",
     "main": "src/index.js",
     "scripts": {
