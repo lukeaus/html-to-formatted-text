@@ -43,7 +43,7 @@ describe("lib", () => {
     });
 
     it("should remove multiple leading new lines", () => {
-        const result = lib("\n\nsome text");
+        const result = lib("\n\n\nsome text");
         expect(result).to.equal("some text");
     });
 
@@ -53,7 +53,7 @@ describe("lib", () => {
     });
 
     it("should remove multiple trailing new lines", () => {
-        const result = lib("some text\n\n");
+        const result = lib("some text\n\n\n");
         expect(result).to.equal("some text");
     });
 

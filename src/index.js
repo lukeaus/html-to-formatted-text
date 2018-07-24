@@ -24,5 +24,5 @@ module.exports = (text = "") =>
         .map(val => striptags(val, ["&nbsp;"], " "))
         .map(val => val.replace(/&nbsp;/g, " "))
         .map(val => val.replace(/\n\n/g, "\n"))
-        .map(val => val.replace(/\n$/, ""))
-        .map(val => val.replace(/^\n/, ""))[0];
+        .map(val => val.replace(/\n+$/, ""))
+        .map(val => val.replace(/^\n+/, ""))[0];
