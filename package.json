@@ -5,6 +5,7 @@
     "main": "src/index.js",
     "scripts": {
         "test": "mocha src/index.test.js -w",
+        "test:once": "mocha src/index.test.js",
         "commit": "git-cz ",
         "semantic-release": "semantic-release",
         "travis-deploy-once": "travis-deploy-once"
@@ -36,6 +37,6 @@
         "travis-deploy-once": "^5.0.1"
     },
     "czConfig": {
-      "path": "node_modules/cz-conventional-changelog"
+        "path": "node_modules/cz-conventional-changelog"
     }
 }
