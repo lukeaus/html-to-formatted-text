@@ -15,6 +15,7 @@ const TAGS_TO_BREAK_ON = [
     "ol",
     "ul",
     "li",
+    "pre",
     "table",
     "td"
 ];
