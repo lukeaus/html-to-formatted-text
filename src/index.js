@@ -20,12 +20,18 @@ const TAGS_TO_BREAK_ON = [
     "td"
 ];
 
+const removeAllNonTagsToBreakOn = html => striptags(html, TAGS_TO_BREAK_ON);
+const convertTagsToBreak = html => striptags(html, [], "\n");
+const replaceSpaces = html => html.replace(/&nbsp;/g, " ");
+const replaceMultiNewLines = html => html.replace(/\n\n/g, "\n");
+const removeLeadingNewLines = html => html.replace(/\n+$/, "");
+const removeTrailingNewLines = html => html.replace(/^\n+/, "");
+
 module.exports = (text = "") =>
     [text]
-        .map(val => striptags(val, TAGS_TO_BREAK_ON))
-        .map(val => striptags(val, [], "\n"))
-        .map(val => striptags(val, ["&nbsp;"], " "))
-        .map(val => val.replace(/&nbsp;/g, " "))
-        .map(val => val.replace(/\n\n/g, "\n"))
-        .map(val => val.replace(/\n+$/, ""))
-        .map(val => val.replace(/^\n+/, ""))[0];
+        .map(removeAllNonTagsToBreakOn)
+        .map(convertTagsToBreak)
+        .map(replaceSpaces)
+        .map(replaceMultiNewLines)
+        .map(removeLeadingNewLines)
+        .map(removeTrailingNewLines)[0];
