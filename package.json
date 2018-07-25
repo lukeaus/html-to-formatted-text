@@ -11,7 +11,7 @@
         "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
         "build": "babel --out-dir dist --ignore *.test.js src",
         "prebuild": "rimraf dist",
-        "commit": "git-cz ",
+        "commit": "git-cz",
         "semantic-release": "semantic-release",
         "travis-deploy-once": "travis-deploy-once"
     },
