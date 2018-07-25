@@ -1,4 +1,5 @@
 import striptags from "striptags";
+import { compose } from "./utils";
 
 const TAGS_TO_BREAK_ON = [
     "p",
@@ -27,11 +28,11 @@ const replaceMultiNewLines = html => html.replace(/\n\n/g, "\n");
 const removeLeadingNewLines = html => html.replace(/\n+$/, "");
 const removeTrailingNewLines = html => html.replace(/^\n+/, "");
 
-module.exports = (text = "") =>
-    [text]
-        .map(removeAllNonTagsToBreakOn)
-        .map(convertTagsToBreak)
-        .map(replaceSpaces)
-        .map(replaceMultiNewLines)
-        .map(removeLeadingNewLines)
-        .map(removeTrailingNewLines)[0];
+module.exports = compose(
+    removeTrailingNewLines,
+    removeLeadingNewLines,
+    replaceMultiNewLines,
+    replaceSpaces,
+    convertTagsToBreak,
+    removeAllNonTagsToBreakOn
+);
