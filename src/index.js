@@ -1,4 +1,4 @@
-const striptags = require("striptags");
+import striptags from "striptags";
 
 const TAGS_TO_BREAK_ON = [
     "p",
