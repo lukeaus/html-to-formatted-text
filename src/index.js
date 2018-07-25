@@ -18,7 +18,14 @@ const TAGS_TO_BREAK_ON = [
     "li",
     "pre",
     "table",
-    "td"
+    "td",
+    "header",
+    "footer",
+    "nav",
+    "section",
+    "aside",
+    "article",
+    "address"
 ];
 
 const removeAllNonTagsToBreakOn = html => striptags(html, TAGS_TO_BREAK_ON);
