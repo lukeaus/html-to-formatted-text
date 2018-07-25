@@ -9,7 +9,7 @@
         "coverage": "nyc --reporter=html --reporter=text npm t",
         "check-coverage": "nyc check-coverage --lines 100 --branches 100 --statements 100 --functions 100",
         "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-        "build": "babel --out-dir dist --ignore *.test.js src",
+        "build": "webpack -p",
         "prebuild": "rimraf dist",
         "commit": "git-cz",
         "semantic-release": "semantic-release",
@@ -48,7 +48,9 @@
         "nyc": "12.0.2",
         "rimraf": "2.6.2",
         "semantic-release": "15.8.1",
-        "travis-deploy-once": "5.0.1"
+        "travis-deploy-once": "5.0.1",
+        "webpack": "4.16.2",
+        "webpack-cli": "3.1.0"
     },
     "config": {
         "commitizen": {

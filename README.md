@@ -18,7 +18,10 @@ To:
 ## Usage
 
 ```javascript
+// Node
 const htmlToFormattedText = require("htmlToFormattedText");
+// ES6
+import htmlToFormattedText from "htmlToFormattedText";
 
 htmlToFormattedText("<p>Some text.</p><p>More text.</p>");
 // Output: "Some text.\n More text."
