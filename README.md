@@ -17,7 +17,13 @@ From:
 
 To:
 
-`"Some text.\n More text.\nEven more text."`
+```
+Some text.
+
+More text.
+
+Even more text.
+```
 
 ## Usage
 
