@@ -65,10 +65,5 @@
         "ghooks": {
             "pre-commit": "npm run coverage && npm run check-coverage"
         }
-    },
-    "babel": {
-        "presets": [
-            "env"
-        ]
     }
 }
