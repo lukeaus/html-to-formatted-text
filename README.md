@@ -19,9 +19,9 @@ To:
 
 ```javascript
 // Node
-const htmlToFormattedText = require("htmlToFormattedText");
+const htmlToFormattedText = require("html-to-formatted-text");
 // ES6
-import htmlToFormattedText from "htmlToFormattedText";
+import htmlToFormattedText from "html-to-formatted-text";
 
 htmlToFormattedText("<p>Some text.</p><p>More text.</p>");
 // Output: "Some text.\n More text."
