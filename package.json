@@ -8,6 +8,8 @@
         "test:once": "nyc --reporter=html --reporter=text mocha src/index.test.js",
         "check-coverage": "nyc check-coverage --lines 100 --branches 100 --statements 100 --functions 100",
         "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+        "build": "babel --out-dir dist --ignore *.test.js src",
+        "prebuild": "rimraf dist",
         "commit": "git-cz ",
         "semantic-release": "semantic-release",
         "travis-deploy-once": "travis-deploy-once"
@@ -21,6 +23,10 @@
         "formatted",
         "text"
     ],
+    "files": [
+        "dist",
+        "README.md"
+    ],
     "author": "Luke Scott <luke.m.scott@gmail.com> (http://lukescott.co/)",
     "license": "MIT",
     "bugs": {
@@ -31,12 +37,15 @@
         "striptags": "3.1.1"
     },
     "devDependencies": {
+        "babel-cli": "6.26.0",
+        "babel-preset-env": "1.7.0",
         "chai": "4.1.2",
         "commitizen": "2.10.1",
         "cz-conventional-changelog": "2.1.0",
         "ghooks": "2.0.4",
         "mocha": "5.2.0",
         "nyc": "12.0.2",
+        "rimraf": "2.6.2",
         "semantic-release": "15.8.1",
         "travis-deploy-once": "5.0.1"
     },
@@ -47,5 +56,10 @@
         "ghooks": {
             "pre-commit": "npm run test:once && npm run check-coverage"
         }
+    },
+    "babel": {
+        "presets": [
+            "env"
+        ]
     }
 }
