@@ -4,8 +4,9 @@
     "description": "Convert HTML to formatted text",
     "main": "src/index.js",
     "scripts": {
-        "test": "mocha src/index.test.js -w",
-        "test:once": "nyc --reporter=html --reporter=text mocha src/index.test.js",
+        "watch:test": "npm t -- -w",
+        "test": "mocha src/index.test.js --require babel-core/register",
+        "coverage": "nyc --reporter=html --reporter=text npm t",
         "check-coverage": "nyc check-coverage --lines 100 --branches 100 --statements 100 --functions 100",
         "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
         "build": "babel --out-dir dist --ignore *.test.js src",
@@ -54,7 +55,7 @@
             "path": "node_modules/cz-conventional-changelog"
         },
         "ghooks": {
-            "pre-commit": "npm run test:once && npm run check-coverage"
+            "pre-commit": "npm run coverage && npm run check-coverage"
         }
     },
     "babel": {
