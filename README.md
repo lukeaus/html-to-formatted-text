@@ -4,6 +4,8 @@
 [![Coverage](https://img.shields.io/codecov/c/github/lukeaus/html-to-formatted-text.svg)](https://codecov.io/gh/lukeaus/html-to-formatted-text)
 [![MIT License](https://img.shields.io/npm/l/html-to-formatted-text.svg)](https://github.com/lukeaus/html-to-formatted-text/blob/master/LICENSE)
 [![version](https://img.shields.io/npm/v/html-to-formatted-text.svg)](http://npm.im/html-to-formatted-text)
+[![downloads](https://img.shields.io/npm/dm/html-to-formatted-text.svg)](http://npm-stat.com/charts.html?package=html-to-formatted-text&from=2018-07-24)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 ## What?
 
