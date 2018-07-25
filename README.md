@@ -2,6 +2,7 @@
 
 [![Tests](https://img.shields.io/travis/lukeaus/html-to-formatted-text/master.svg)](https://travis-ci.org/lukeaus/html-to-formatted-text)
 [![Coverage](https://img.shields.io/codecov/c/github/lukeaus/html-to-formatted-text.svg)](https://codecov.io/gh/lukeaus/html-to-formatted-text)
+[![MIT License](https://img.shields.io/npm/l/html-to-formatted-text.svg)](https://github.com/lukeaus/html-to-formatted-text/blob/master/LICENSE)
 
 ## What?
 
