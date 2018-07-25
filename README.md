@@ -1,6 +1,6 @@
 # html-to-formatted-text
 
-[![Tests](https://img.shields.io/travis/lukeaus/html-to-formatted-text.svg)](https://travis-ci.org/lukeaus/html-to-formatted-text)
+[![Tests](https://img.shields.io/travis/lukeaus/html-to-formatted-text/master.svg)](https://travis-ci.org/lukeaus/html-to-formatted-text)
 [![Coverage](https://img.shields.io/codecov/c/github/lukeaus/html-to-formatted-text.svg)](https://codecov.io/gh/lukeaus/html-to-formatted-text)
 
 ## What?
