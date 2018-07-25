@@ -21,14 +21,33 @@ To:
 
 ## Usage
 
+### Node
+
 ```javascript
-// Node
 const htmlToFormattedText = require("html-to-formatted-text");
+htmlToFormattedText("<p>foo</p><p>bar</p>"); // Output: "foo\nbar"
+```
+
+### ES6
+
+```javascript
 // ES6
 import htmlToFormattedText from "html-to-formatted-text";
+htmlToFormattedText("<p>foo</p><p>bar</p>"); // Output: "foo\nbar"
+```
 
-htmlToFormattedText("<p>Some text.</p><p>More text.</p>");
-// Output: "Some text.\n More text."
+### Vanilla JS / UMD
+
+```html
+<!-- latest version -->
+<script src="https://unpkg.com/html-to-formatted-text/dist/index.umd.min.js"></script>
+<!-- or for a specific version -->
+<script src="https://unpkg.com/html-to-formatted-text@X.Y.Z/dist/index.umd.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    window.htmlToFormattedText('<p>foo</p><p>bar</p>') // Output: "foo\nbar"
+  });
+</script>
 ```
 
 ## Why?
