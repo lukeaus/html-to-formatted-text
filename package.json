@@ -6,6 +6,7 @@
   "scripts": {
     "watch:test": "npm t -- -w",
     "test": "mocha src/index.test.js --require babel-core/register",
+    "lint": "eslint src",
     "coverage": "nyc --reporter=html --reporter=text npm t",
     "check-coverage": "nyc check-coverage --lines 100 --branches 100 --statements 100 --functions 100",
     "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
@@ -73,7 +74,7 @@
       "path": "node_modules/cz-conventional-changelog"
     },
     "ghooks": {
-      "pre-commit": "npm run coverage && npm run check-coverage"
+      "pre-commit": "npm run lint && npm run coverage && npm run check-coverage"
     }
   }
 }
