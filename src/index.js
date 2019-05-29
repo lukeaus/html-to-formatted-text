@@ -24,6 +24,7 @@ const TAGS_TO_BREAK_ON = [
   'footer',
   'nav',
   'section',
+  'summary',
   'aside',
   'article',
   'address'
