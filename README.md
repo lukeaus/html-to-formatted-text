@@ -29,7 +29,11 @@ Even more text.
 
 ### Node
 
-```npm install --save html-to-formatted-text```
+### Installation
+
+```bash
+npm install --save html-to-formatted-text
+```
 
 ```javascript
 const htmlToFormattedText = require("html-to-formatted-text");
