@@ -29,6 +29,8 @@ Even more text.
 
 ### Node
 
+```npm install --save html-to-formatted-text```
+
 ```javascript
 const htmlToFormattedText = require("html-to-formatted-text");
 htmlToFormattedText("<p>foo</p><p>bar</p>"); // Output: "foo\nbar"
