@@ -18,6 +18,7 @@ const TAGS_TO_BREAK_ON = [
   'li',
   'pre',
   'table',
+  'th',
   'td',
   'header',
   'footer',
