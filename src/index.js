@@ -20,6 +20,7 @@ const TAGS_TO_BREAK_ON = [
   'table',
   'th',
   'td',
+  'blockquote',
   'header',
   'footer',
   'nav',
