@@ -73,5 +73,4 @@ One use case might be that a user adds HTML via an online editor [TinyMCE](https
 - Create an issue on Github
 - Fork project
 - Make changes then use `npm run commit` to make commits
-- Check that tests pass on travis.ci
 - Create a pull request
