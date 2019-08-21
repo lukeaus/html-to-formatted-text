@@ -37,7 +37,11 @@ npm install --save html-to-formatted-text
 
 ```javascript
 const htmlToFormattedText = require("html-to-formatted-text");
-htmlToFormattedText("<p>foo</p><p>bar</p>"); // Output: "foo\nbar"
+htmlToFormattedText("<p>foo</p><p>bar</p>");
+/* Output
+"foo
+bar"
+*/
 ```
 
 ### ES6
@@ -45,7 +49,11 @@ htmlToFormattedText("<p>foo</p><p>bar</p>"); // Output: "foo\nbar"
 ```javascript
 // ES6
 import htmlToFormattedText from "html-to-formatted-text";
-htmlToFormattedText("<p>foo</p><p>bar</p>"); // Output: "foo\nbar"
+htmlToFormattedText("<p>foo</p><p>bar</p>");
+/* Output
+"foo
+bar"
+*/
 ```
 
 ### Vanilla JS / UMD
@@ -57,7 +65,11 @@ htmlToFormattedText("<p>foo</p><p>bar</p>"); // Output: "foo\nbar"
 <script src="https://unpkg.com/html-to-formatted-text@X.Y.Z/dist/index.umd.min.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    window.htmlToFormattedText('<p>foo</p><p>bar</p>') // Output: "foo\nbar"
+    window.htmlToFormattedText('<p>foo</p><p>bar</p>')
+    /* Output
+    "foo
+    bar"
+    */
   });
 </script>
 ```
