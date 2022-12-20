@@ -76,4 +76,11 @@ describe('lib', () => {
     )
     expect(result).to.equal('some\ntext1\ntext2')
   })
+
+  it('should replace common HTML entities', () => {
+    const result = lib(
+      '&lt; &gt; &amp; &quot; &apos; &cent; &pound; &yen; &euro; &copy; &reg;'
+    )
+    expect(result).to.equal(`< > & " ' ¢ £ ¥ € © ®`)
+  })
 })
